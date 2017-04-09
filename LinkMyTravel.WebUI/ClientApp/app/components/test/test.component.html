@@ -1,0 +1,61 @@
+﻿<h4>Todo List Test Form</h4>
+<div class="row">
+    <div class="col-md-8">
+        <form role="form" class="form-horizontal">
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label"> 
+                    Names 
+                </label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="name" placeholder="Name"
+                         #Name (ngModel)="Names"  value="{{Names}}"  />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1" class="col-sm-3 control-label">
+                    Is Complete
+                </label>
+                <div class="col-sm-9">
+                    <input type="checkbox" id="code" placeholder="Code">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-9">
+                    <button type="button" class="btn btn-primary btn-sm"
+                            (click)=addTodoItem(Name)>
+                        Save
+                    </button>
+                    <button type="button" class="btn" (click)=addTodoItem(Name.value)>
+                        Reset
+                    </button>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<div class="row" style="margin-top:5px;">
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+            <table class="table table-bordered table-responsive">
+                <thead class="">
+                    <tr class="blue-bg">
+                        <td>Name</td>
+                        <td>Is Complete</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let todoItem of todoList">
+                        <td>{{ todoItem.name }}</td>
+                        <td>{{ todoItem.isComplete }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-2"></div>
+    </div>

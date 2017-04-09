@@ -1,0 +1,7 @@
+﻿1) initial loader and global loader
+2) registration form 
+3) account screen
+4) theme change dynamic
+5) social networking login
+6) login task
+7) 

@@ -1,0 +1,215 @@
+<header id="header" class="navbar-static-top">
+    <div class="topnav hidden-xs">
+        <div class="container">
+            <ul class="quick-menu pull-left">
+                <li><a [routerLink]="['/myprofile']">MY ACCOUNT</a></li>
+                <li class="ribbon">
+                    <a href="#">English</a>
+                    <ul class="menu mini">
+                        <li><a href="#" title="English">English</a></li>
+                        <li><a href="#" title="Arabic">Arabic</a></li>
+                        <li class="active"><a href="#" title="Hindi">Hindi</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="quick-menu pull-right">
+                <li>
+                    <a href="#"><img src="/images/avatar.png" width="31 px;" class="avatar img-responsive"></a>
+                </li>
+                <li><a href="" class="button yellow btn-small" style="height: 30px; font-size: 1em;"><i class="fa fa-user-o"></i> PREMIUM USER</a></li>
+                <li><a href="#travelo-login" class="soap-popupbox" data-toggle="modal" data-target="#loginModal">LOGIN</a></li>
+                <li><a href="#travelo-signup" class="soap-popupbox" data-toggle="modal" data-target="#signUpModal">SIGNUP</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-header">
+
+        <a href="#mobile-menu-01" data-toggle="collapse" class="mobile-menu-toggle">
+            Mobile Menu Toggle
+        </a>
+        <div class="container pull-right">
+            <h1 class="logo navbar-brand">
+                <a href="#" title="Travelo - home">
+                    <img src="/images/logo.png" alt="Travelo HTML5 Template">
+                </a>
+            </h1>
+            <nav id="main-menu" role="navigation" class="">
+                <ul class="menu">
+                    <li class="menu-item-has-children active">
+                        <a [routerLink]="['/home']">Home</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a [routerLink]="['/search']">Search</a>
+                        <ul>
+                            <li><a href="">By Location</a></li>
+                            <li><a href="">By Car</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children megamenu-menu">
+                        <a [routerLink]="['/policies']">How It works?</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a [routerLink]="['/contactus']">Find A Ride</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a [routerLink]="['/aboutus']">Offer A Ride</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a [routerLink]="['/demo']">Demo</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a [routerLink]="['/test']">Test</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a [routerLink]="['/fetch-data']">Fetch</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav id="mobile-menu-01" class="mobile-menu collapse">
+            <ul id="mobile-primary-menu" class="menu">
+                <li class="menu-item-has-children active">
+                    <a href="#">Home</a><button class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu-submenu-item-0"></button>
+                    <ul id="mobile-menu-submenu-item-0" class="collapse">
+                        <li class="active"><a href="#">Home Layout 1</a></li>
+                        <li><a href="#">Home Layout 2</a></li>
+                        <li><a href="#">Home Layout 3</a></li>
+                        <li><a href="#">Home Layout 4</a></li>
+                        <li><a href="#">Home Layout 5</a></li>
+                        <li><a href="#">Home Layout 6</a></li>
+                        <li><a href="#">Home Layout 7</a></li>
+                        <li><a href="#">Home Layout 8</a></li>
+                        <li><a href="#">Home Layout 9</a></li>
+                        <li><a href="#">Home Layout 10</a></li>
+                        <li><a href="#">Home Layout 11</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">Hotels</a><button class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu-submenu-item-1"></button>
+                    <ul id="mobile-menu-submenu-item-1" class="collapse">
+                        <li><a href="#">Home Hotels</a></li>
+                        <li><a href="#">List View</a></li>
+                        <li><a href="#">Grid View</a></li>
+                        <li><a href="#">Block View</a></li>
+                        <li><a href="#">Detailed</a></li>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="#">Thank You</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="flight-index.html">Flights</a><button class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu-submenu-item-2"></button>
+                    <ul id="mobile-menu-submenu-item-2" class="collapse">
+                        <li><a href="#">Home Flights</a></li>
+                        <li><a href="#">List View</a></li>
+
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="car-index.html">Cars</a><button class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu-submenu-item-3"></button>
+                    <ul id="mobile-menu-submenu-item-3" class="collapse">
+                        <li><a href="#">Home Cars</a></li>
+                        <li><a href="#">List View</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="cruise-index.html">Cruises</a><button class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu-submenu-item-4"></button>
+                    <ul id="mobile-menu-submenu-item-4" class="collapse">
+                        <li><a href="#">Home Cruises</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="tour-index.html">Tour</a><button class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu-submenu-item-5"></button>
+                    <ul id="mobile-menu-submenu-item-5" class="collapse">
+                        <li><a href="#">Home Tour</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="#">Pages</a><button class="dropdown-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu-submenu-item-6"></button>
+                    <ul id="mobile-menu-submenu-item-6" class="collapse">
+                        <li class="menu-item-has-children">
+                            <a href="#">Standard Pages</a>
+                            <ul>
+                                <li><a href="#">About Us 1</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Extra Pages</a>
+                            <ul>
+                                <li><a href="#">Holidays</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Special Pages</a>
+                            <ul>
+                                <li><a href="#">404 Page 1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <ul class="mobile-topnav container">
+                <li><a [routerLink]="['/myprofile']">MY ACCOUNT</a></li>
+                <li class="ribbon language menu-color-skin">
+                    <a href="#" data-toggle="collapse">ENGLISH</a>
+                    <ul class="menu mini">
+                        <li class="active"><a href="#" title="English">English</a></li>
+                        <li><a href="#" title="Dansk">Hindi</a></li>
+                        <li><a href="#" title="Deutsch">Arabic</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="#travelo-login" class="soap-popupbox">LOGIN</a></li>
+                <li><a href="#travelo-signup" class="soap-popupbox">SIGNUP</a></li>
+                <li class="ribbon currency menu-color-skin">
+                    <a href="#">USD</a>
+                    <ul class="menu mini">
+                        <li class="active"><a href="#" title="USD">USD</a></li>
+                        <li><a href="#" title="AED">AED></a></li>
+                        <li><a href="#" title="INR">INR</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--<div class='main-nav'>
+    <div class='navbar navbar-inverse'>
+        <div class='navbar-header'>
+            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                <span class='sr-only'>Toggle navigation</span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+            <a class='navbar-brand' [routerLink]="['/home']">LinkMyTravel</a>
+        </div>
+        <div class='clearfix'></div>
+        <div class='navbar-collapse collapse'>
+            <ul class='nav navbar-nav'>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/home']">
+                        <span class='glyphicon glyphicon-home'></span> Home
+                    </a>
+                </li>
+
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/students']">
+                        <span class='glyphicon glyphicon-th-list'></span> Students
+                    </a>
+                </li>
+
+
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/test']">
+                        <span class='glyphicon'></span> test
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>-->
