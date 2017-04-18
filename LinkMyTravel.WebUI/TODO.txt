@@ -1,4 +1,17 @@
-﻿1) initial loader and global loader
+﻿1) Html wireframes ready
+2) Facebook / Google logic
+3) Google map api 
+4) OTP service 
+5) asp.net core hosting and test in mobile phone
+6) images and logo creation
+7) on tab click, want some animation
+8) menus, buttons needs little big in size
+9) logo not showing correctly.
+
+
+===============================================
+
+1) initial loader and global loader
 2) registration form 
 3) account screen
 4) theme change dynamic

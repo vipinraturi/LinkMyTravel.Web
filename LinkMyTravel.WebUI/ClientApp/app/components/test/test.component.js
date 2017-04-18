@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-var jquery_1 = require("jquery");
+//import $ from "jquery";
 var TestComponent = (function () {
     function TestComponent(http) {
         this.http = http;
@@ -32,8 +32,8 @@ var TestComponent = (function () {
         var headers = new http_1.Headers();
         headers.append('Content-Type', 'application/json; charset=utf-8');
         headers.append('Access-Control-Allow-Origin', 'http://localhost:50841');
-        console.log(this.Key + ' ' + Name + '  ' + this.IsComplete + '  ' + this.Names + ' '
-            + jquery_1.default('#name').val());
+        console.log(this.Key + ' ' + Name + '  ' + this.IsComplete + '  ' + this.Names);
+        //$('#name').val()
         //if (this.Key == 0) {
         //    this.http.post('http://localhost:54129/api/Todo',
         //        JSON.stringify({ Key: this.Key, Name: this.Name, Email: this.IsComplete }),
