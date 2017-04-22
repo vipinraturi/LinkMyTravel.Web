@@ -1,0 +1,153 @@
+﻿<div class="row" style="margin-bottom: 50px;">
+    <div class="col-md-12">
+        <form role="form" class="form-horizontal">
+            <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">
+                    From Location <span class="red">*</span>
+                </label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id=" FromLocation" placeholder="From Location">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="mobile" class="col-sm-2 control-label">
+                    To Location <span class="red">*</span>
+                </label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="ToLocation" placeholder="To Location">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-10">
+                    <button type="button" class="btn btn-primary btn-sm">
+                        Save My Location & Proceed
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <td>
+                        #
+                    </td>
+                    <td>
+                        Start Point
+                    </td>
+                    <td>
+                        End Point
+                    </td>
+                    <td>
+                        Distance Away
+                    </td>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        Profile Pic
+                    </td>
+                    <td>
+                        Age
+                    </td>
+                    <td>
+                        Profession
+                    </td>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        Varified Account
+                    </td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        Shardra
+                    </td>
+                    <td>
+                        Faridabad
+                    </td>
+                    <td>
+                        40 KM
+                    </td>
+                    <td>
+                        Vipin Raturi
+                    </td>
+                    <td>
+                        <a href="#"><img src="/images/vipin.JPG" width="31px" class="avatar img-responsive"></a>
+                    </td>
+                    <td>
+                        32
+                    </td>
+                    <td>
+                        Software Engineer
+                    </td>
+                    <td>
+                        Male
+                    </td>
+                    <td>
+                        No
+                    </td>
+                    <td>
+                        <a [routerLink]="['/handshakerequest']"  class="btn btn-primary">Send Handshake</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        Faridabad
+                    </td>
+                    <td>
+                        Shardra
+
+                    </td>
+                    <td>
+                        40 KM
+                    </td>
+                    <td>
+                        Vaibhav Garg
+                    </td>
+                    <td>
+                        <a href="#"><img src="/images/avatar.png" width="31px" class="avatar img-responsive"></a>
+                    </td>
+                    <td>
+                        32
+                    </td>
+                    <td>
+                        Marketing Manager
+                    </td>
+                    <td>
+                        Male
+                    </td>
+                    <td>
+                        Yes
+                    </td>
+                    <td>
+                        <a [routerLink]="['/handshakerequest']" class="btn btn-primary">Send Handshake</a>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+    </div>
+    <div class="col-md-8">
+        <a href="#"><u>Load More Records</u></a>
+    </div>
+</div>

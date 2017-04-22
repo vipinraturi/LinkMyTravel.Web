@@ -8,7 +8,6 @@
 8) menus, buttons needs little big in size
 9) logo not showing correctly.
 
-
 ===============================================
 
 1) initial loader and global loader
@@ -18,3 +17,23 @@
 5) social networking login
 6) login task
 7) 
+
+ font-size: 1.5em;
+
+ $('#registerBtnUnique').tab('show')
+
+ 1) we connect you with those people who are going to same location.
+ 2) we share your information only with those, you accept the "Handshake" request.
+ 3) 
+
+
+ Untill and Unless account is verified, you cannot send handshake.
+
+
+ 1) Block the user option
+ 2) send complain option for some user
+ 3) chat user
+
+
+ link-connect
+

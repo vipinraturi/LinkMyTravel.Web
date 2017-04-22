@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="~/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/css/font-awesome.min.css">
     <link id="main-style" rel="stylesheet" href="~/css/style-dark-blue.css">
-
-    @*<script type="text/javascript" src="~/js/pace.min.js" data-pace-options="{ &quot;ajax&quot;: false }"></script>
-        <script type="text/javascript" src="~/js/page-loading.js"></script>*@
-
     <script type="text/javascript" src="~/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="~/js/bootstrap.min.js"></script>
 
@@ -28,16 +24,14 @@
 @RenderSection("scripts", required: false)
 </html>
 
-<!-- Modal -->
 <div id="loginModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
-        @*style="width: 25% !important;"*@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 <ul class="nav nav-tabs">
                     <li class="active titleClass"><a data-toggle="tab" href="#login">Login</a></li>
-                    <li class="titleClass"><a data-toggle="tab" href="#register">Sign Up</a></li>
+                    <li class="titleClass"><a data-toggle="tab" id="registerBtnUnique" href="#register">Sign Up</a></li>
                     <li class="titleClass"><a data-toggle="tab" href="#forgotPassword">Forgot Password</a></li>
                 </ul>
             </div>
@@ -58,21 +52,16 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="email" class="col-sm-12">
-                                                    UserName
+                                                    Email
                                                 </label>
                                                 <div class="col-sm-12">
                                                     <input type="email" class="form-control" id="email1"
-                                                           placeholder="UserName">
+                                                           placeholder="Email">
                                                 </div>
                                             </div>
-                                            @*<div class="row">
-                                                    <div class="col-sm-12 control-label">
-                                                        <a  data-toggle="tab" href="#forgotPassword">Forgot your password?</a>
-                                                    </div>
-                                                </div>*@
                                             <div class="form-group">
                                                 <label for="exampleInputPassword1" class="col-sm-12">
-                                                    OTP
+                                                    Password (OTP)
                                                 </label>
                                                 <div class="col-sm-12">
                                                     <input type="password" class="form-control" id="otp" placeholder="OTP">
@@ -114,7 +103,7 @@
                                         <form role="form" class="form-horizontal">
                                             <div class="form-group">
                                                 <label for="email" class="col-sm-2 control-label">
-                                                    Name
+                                                    Name <span class="red">*</span>
                                                 </label>
                                                 <div class="col-sm-10">
                                                     <div class="row">
@@ -133,7 +122,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="email" class="col-sm-2 control-label">
-                                                    Email
+                                                    Email <span class="red">*</span>
                                                 </label>
                                                 <div class="col-sm-10">
                                                     <input type="email" class="form-control" id="email" placeholder="Email">
@@ -141,18 +130,56 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="mobile" class="col-sm-2 control-label">
-                                                    Mobile
+                                                    Mobile <span class="red">*</span>
                                                 </label>
                                                 <div class="col-sm-10">
-                                                    <input type="email" class="form-control" id="mobile" placeholder="Mobile">
+                                                    <input type="text" class="form-control" id="mobile" placeholder="Mobile">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="password" class="col-sm-2 control-label">
-                                                    Password
+                                                <label for="Gender" class="col-sm-2 control-label">
+                                                   Gender <span class="red">*</span>
+                                                </label>
+                                                <label for="Gender" class="col-sm-2 control-label">
+                                                    <input name="gender" id="gender-0" value="Male" checked="checked" type="radio">
+                                                    Male
+                                                </label>
+                                                <label for="Gender" class="col-sm-2 control-label">
+                                                    <input name="gender" id="gender-1" value="Female" type="radio">
+                                                    Female
+                                                </label>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="mobile" class="col-sm-2 control-label">
+                                                    Profession <span class="red">*</span>
                                                 </label>
                                                 <div class="col-sm-10">
-                                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                                    <input type="text" class="form-control" id="Profession" 
+                                                           placeholder="Profession">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="mobile" class="col-sm-2 control-label">
+                                                    Profile Pic <span class="red">*</span>
+                                                </label>
+                                                <div class="col-sm-10">
+                                                    <input type="file" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="mobile" class="col-sm-2 control-label">
+                                                    Id Proff <span class="red">*</span>
+                                                </label>
+                                                <div class="col-sm-10">
+                                                   <input type="file" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="mobile" class="col-sm-2 control-label">
+                                                    Terms and Conditions <span class="red">*</span>
+                                                </label>
+                                                <div class="col-sm-10">
+                                                   <input type="checkbox" />
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -174,10 +201,10 @@
                                         <form role="form" class="form-horizontal">
                                             <div class="form-group">
                                                 <label for="email" class="col-sm-3 control-label">
-                                                    UserName
+                                                    Email
                                                 </label>
                                                 <div class="col-sm-9">
-                                                    <input type="text" class="form-control" id="UserName" placeholder="UserName">
+                                                    <input type="text" class="form-control" id="UserName" placeholder="Email">
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -196,8 +223,6 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -205,7 +230,6 @@
 
             </div>
         </div>
-
     </div>
 </div>
 

@@ -14,6 +14,9 @@ import { contactusComponent } from './components/contactus/contactus.component';
 import { aboutusComponent } from './components/aboutus/aboutus.component';
 import { demoComponent } from './components/demo/demo.component';
 import { myProfileComponent } from './components/account/myProfile.component';
+import { howitworksComponent } from './components/howitworks/howitworks.component';
+import { handshakeComponent } from './components/handshake/handshake.component';
+import { handshakerequestComponent } from './components/handshakerequest/handshakerequest.component';
 
 
 @NgModule({
@@ -31,7 +34,10 @@ import { myProfileComponent } from './components/account/myProfile.component';
         contactusComponent,
         aboutusComponent,
         demoComponent,
-        myProfileComponent
+        myProfileComponent,
+        howitworksComponent,
+        handshakeComponent,
+        handshakerequestComponent
     ],
     imports: [
         UniversalModule,
@@ -49,6 +55,9 @@ import { myProfileComponent } from './components/account/myProfile.component';
             { path: 'demo', component: demoComponent }, 
             { path: 'search', component: searchComponent }, 
             { path: 'myprofile', component: myProfileComponent }, 
+            { path: 'howitworks', component: howitworksComponent }, 
+            { path: 'handshake', component: handshakeComponent }, 
+            { path: 'handshakerequest', component: handshakerequestComponent }, 
             { path: '**', redirectTo: 'home' }
         ])
     ]
