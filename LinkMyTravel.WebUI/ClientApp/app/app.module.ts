@@ -17,6 +17,7 @@ import { myProfileComponent } from './components/account/myProfile.component';
 import { howitworksComponent } from './components/howitworks/howitworks.component';
 import { handshakeComponent } from './components/handshake/handshake.component';
 import { handshakerequestComponent } from './components/handshakerequest/handshakerequest.component';
+import { usersComponent } from './components/users/users.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { handshakerequestComponent } from './components/handshakerequest/handsha
         myProfileComponent,
         howitworksComponent,
         handshakeComponent,
-        handshakerequestComponent
+        handshakerequestComponent,
+        usersComponent
     ],
     imports: [
         UniversalModule,
@@ -58,6 +60,7 @@ import { handshakerequestComponent } from './components/handshakerequest/handsha
             { path: 'howitworks', component: howitworksComponent }, 
             { path: 'handshake', component: handshakeComponent }, 
             { path: 'handshakerequest', component: handshakerequestComponent }, 
+            { path: 'users', component: usersComponent }, 
             { path: '**', redirectTo: 'home' }
         ])
     ]

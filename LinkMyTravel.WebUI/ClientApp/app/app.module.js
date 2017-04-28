@@ -24,6 +24,7 @@ var myProfile_component_1 = require("./components/account/myProfile.component");
 var howitworks_component_1 = require("./components/howitworks/howitworks.component");
 var handshake_component_1 = require("./components/handshake/handshake.component");
 var handshakerequest_component_1 = require("./components/handshakerequest/handshakerequest.component");
+var users_component_1 = require("./components/users/users.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -48,7 +49,8 @@ AppModule = __decorate([
             myProfile_component_1.myProfileComponent,
             howitworks_component_1.howitworksComponent,
             handshake_component_1.handshakeComponent,
-            handshakerequest_component_1.handshakerequestComponent
+            handshakerequest_component_1.handshakerequestComponent,
+            users_component_1.usersComponent
         ],
         imports: [
             angular2_universal_1.UniversalModule,
@@ -69,6 +71,7 @@ AppModule = __decorate([
                 { path: 'howitworks', component: howitworks_component_1.howitworksComponent },
                 { path: 'handshake', component: handshake_component_1.handshakeComponent },
                 { path: 'handshakerequest', component: handshakerequest_component_1.handshakerequestComponent },
+                { path: 'users', component: users_component_1.usersComponent },
                 { path: '**', redirectTo: 'home' }
             ])
         ]
