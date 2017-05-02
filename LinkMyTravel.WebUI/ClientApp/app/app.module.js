@@ -25,6 +25,7 @@ var howitworks_component_1 = require("./components/howitworks/howitworks.compone
 var handshake_component_1 = require("./components/handshake/handshake.component");
 var handshakerequest_component_1 = require("./components/handshakerequest/handshakerequest.component");
 var users_component_1 = require("./components/users/users.component");
+//import {loginComponent } from './components/login/login.component';
 var AppModule = (function () {
     function AppModule() {
     }
@@ -72,6 +73,7 @@ AppModule = __decorate([
                 { path: 'handshake', component: handshake_component_1.handshakeComponent },
                 { path: 'handshakerequest', component: handshakerequest_component_1.handshakerequestComponent },
                 { path: 'users', component: users_component_1.usersComponent },
+                //{ path: 'login', component: loginComponent }, 
                 { path: '**', redirectTo: 'home' }
             ])
         ]

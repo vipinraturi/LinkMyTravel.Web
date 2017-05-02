@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="~/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/css/font-awesome.min.css">
     <link id="main-style" rel="stylesheet" href="~/css/style-dark-blue.css">
-    <script type="text/javascript" src="~/js/jquery-1.11.1.min.js"></script>
+    @*<script type="text/javascript" src="~/js/jquery-1.11.1.min.js"></script>*@
     <script type="text/javascript" src="~/js/bootstrap.min.js"></script>
     <style>
         .titleClass {
@@ -19,6 +19,7 @@
         }
     </style>
 </head>
+
 @RenderBody()
 @RenderSection("scripts", required: false)
 </html>
@@ -37,8 +38,6 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-12" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
-
-
                         <div class="tab-content">
                             <div id="login" class="tab-pane fade in active">
                                 <div class="row">
@@ -88,10 +87,10 @@
                                         </h3>
                                     </div>
                                     <div class="col-md-12">
-                                        <a href="#" class="btn btn-primary" style="display: block; width: 100%;">Facebook</a> <br />
+                                        <a href="#" class="btn btn-primary" style="display: block; width: 100%;">Log in with Facebook <i class="fa fa-facebook" aria-hidden="true"></i></a> <br />
                                     </div>
                                     <div class="col-md-12">
-                                        <a href="#" class="btn btn-danger" style="display: block; width: 100%;">Google </a>
+                                        <a href="#" class="btn btn-danger" style="display: block; width: 100%;">Log in with Google <i class="fa fa-google" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
 

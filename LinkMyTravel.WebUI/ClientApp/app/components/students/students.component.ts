@@ -127,6 +127,8 @@ export class studentsComponent {
         this.http.get('/api/StudentMastersAPI/Student').subscribe(result => {
             this.student = result.json();
         });
+
+
     }
 
 

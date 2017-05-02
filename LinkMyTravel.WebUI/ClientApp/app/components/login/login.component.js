@@ -10,32 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
-var usersComponent = (function () {
-    function usersComponent(http) {
-        this.http = http;
-        this.getData();
+var loginComponent = (function () {
+    function loginComponent(http) {
     }
-    usersComponent.prototype.getData = function () {
-        var _this = this;
-        var headers = new http_1.Headers();
-        headers.append('X-Token', 'test123');
-        this.http.get('http://localhost:54129/api/Admin/', { headers: headers })
-            .subscribe(function (data) {
-            console.log(data.json().list);
-            _this.Users = data.json().list;
-            console.log(_this.Users);
-            debugger;
-        });
-    };
-    return usersComponent;
+    return loginComponent;
 }());
-usersComponent = __decorate([
+loginComponent = __decorate([
     core_1.Component({
-        selector: 'users-directive',
-        template: require('./users.component.html'),
-        styles: [require('./users.component.css')]
+        selector: 'login',
+        template: require('./login.component.html')
     }),
     __metadata("design:paramtypes", [http_1.Http])
-], usersComponent);
-exports.usersComponent = usersComponent;
-//# sourceMappingURL=users.component.js.map
+], loginComponent);
+exports.loginComponent = loginComponent;
+//# sourceMappingURL=login.component.js.map

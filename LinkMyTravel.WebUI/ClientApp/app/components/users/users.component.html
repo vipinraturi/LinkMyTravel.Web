@@ -1,7 +1,4 @@
-﻿
-
-
-<div class="row"  style="margin-top: 50px;margin-bottom: 50px;">
+﻿<div class="row"  style="margin-top: 50px;margin-bottom: 50px;">
     <div class="col-md-2">
     </div>
     <div class="col-md-8">
@@ -38,42 +35,38 @@
                     
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
+            <tbody >
+                <tr *ngFor="let user  of Users;">
+                    <td></td>
                     <td>
-                        Vipin Raturi
+                        {{user.userName}}
                     </td>
                     <td>
-                        vipin.raturi@gmail.com
+                        {{user.email}}
                     </td>
                     <td>
-                        +91-6767567567565
+                        {{user.phone}}
                     </td>
                     <td>
-                        Male
+                       
                     </td>
                     <td>
-                        Software Engineer
+                       
                     </td>
                     <td>
                         <a href="#"><img src="/images/vipin.JPG" width="31px" class="avatar img-responsive"></a>
                     </td>
                     <td>
-                       
                     </td>
                     <td>
                         <a  class="btn btn-primary">Delete</a>
                         <a class="btn btn-primary">Edit</a>
                     </td>
                 </tr>
-              
-                
             </tbody>
         </table>
     </div>
 </div>
-
 <div class="row">
     <div class="col-md-2">
     </div>
